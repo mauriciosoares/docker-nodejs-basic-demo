@@ -58,7 +58,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: public.ecr.aws/c0r1j8q1/gh-actions
+        ECR_REPOSITORY: gh-actions
         IMAGE_TAG: ${{ github.sha }}
       run: |
         # Build a docker container and
@@ -81,5 +81,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: GhAction
-        cluster: GhActionClusterUpdate
+        cluster: GhActionCluster
         wait-for-service-stability: true

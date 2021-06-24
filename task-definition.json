@@ -29,7 +29,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "public.ecr.aws/c0r1j8q1/gh-actions",
+      "image": "442423999766.dkr.ecr.us-east-1.amazonaws.com/private-repo:7cec69f1c5f48741ed5ec6cbdfa5d5d0c6949f9d",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -56,16 +56,23 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:442423999766:task-definition/DeployContainer:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:442423999766:task-definition/DeployContainer:2",
   "family": "DeployContainer",
-  "requiresAttributes": [],
+  "requiresAttributes": [
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    }
+  ],
   "pidMode": null,
   "requiresCompatibilities": [
     "EC2"
   ],
   "networkMode": null,
   "cpu": "1024",
-  "revision": 1,
+  "revision": 2,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,

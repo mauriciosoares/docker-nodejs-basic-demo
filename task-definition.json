@@ -71,7 +71,7 @@
     "EC2"
   ],
   "networkMode": null,
-  "cpu": "1024",
+  "cpu": "512",
   "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,

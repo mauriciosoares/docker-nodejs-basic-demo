@@ -1,7 +1,7 @@
 const app = require('express')();
 
 app.get('/', (req, res ) => 
-    res.json({ message: 'Docker and ECS are super easy 🐳 update' }) 
+    res.json({ message: 'Docker and ECS are super easy 🐳 update, CPU change' }) 
 );
 
 const port = process.env.PORT || 8080;

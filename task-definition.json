@@ -16,7 +16,7 @@
       ],
       "command": null,
       "linuxParameters": null,
-      "cpu": 1,
+      "cpu": 0,
       "environment": [],
       "resourceRequirements": null,
       "ulimits": null,
@@ -50,7 +50,7 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "256",
+  "memory": "128",
   "taskRoleArn": null,
   "compatibilities": [
     "EXTERNAL",

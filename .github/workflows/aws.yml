@@ -85,3 +85,4 @@ jobs:
         service: gh-action-service
         cluster: gh-action 
         wait-for-service-stability: true
+        force-new-deployment: true
